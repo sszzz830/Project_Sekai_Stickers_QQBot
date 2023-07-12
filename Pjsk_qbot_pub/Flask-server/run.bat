@@ -1,0 +1,2 @@
+python serv.py
+pause

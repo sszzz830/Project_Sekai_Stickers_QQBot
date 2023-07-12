@@ -1,0 +1,6 @@
+{
+    "qq_bot": {
+        "cqhttp_url": "http://localhost:8551",
+        "adminQQ": "114514"
+    }
+}
