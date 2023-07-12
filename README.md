@@ -1,0 +1,2 @@
+# Project_Sekai_Stickers_QQBot
+绘制pjsk表情包的QQ机器人
