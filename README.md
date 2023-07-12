@@ -2,7 +2,8 @@
 绘制pjsk表情包的QQ机器人<br>
 ## Introduction
 图片和字体来源:https://github.com/TheOriginalAyaka/sekai-stickers<br>
-主要使用PIL库完成图像绘制,部分情况可能效果不佳<br>
+主要使用PIL库完成图像绘制<br>
+由于本人技术较差,部分情况可能效果不佳<br>
 ## Functions
 <img width="626" alt="MainFunction" src="https://github.com/sszzz830/Project_Sekai_Stickers_QQBot/assets/32834442/672fec98-35b3-43f3-8e8a-20e42873ac89">
 
