@@ -5,7 +5,6 @@ import json
 import requests
 from flask import request, Flask
 import time
-import os
 import re
 from PIL import Image, ImageDraw, ImageFont
 import random
@@ -17,11 +16,11 @@ def imageGen(font_size, edge_size, font_choice, image_file, text, pos, color, le
 		font = ImageFont.truetype('Fonts/YurukaStd.ttf', font_size)
 	lines = text.split('\n')
 	max_width = max([font.getsize(t)[0] for t in lines])
-	total_height = int(len(lines) * font_size * 1.03) # calculate total height of all lines
+	total_height = int(len(lines) * font_size * 0.97) 
 	text_img = Image.new('RGBA', (max_width + 2*edge_size, total_height + 2*edge_size), (0, 0, 0, 0))
 	text_draw = ImageDraw.Draw(text_img)
 	for i, line in enumerate(lines):
-		line_height = i * font_size * 1.03
+		line_height = i * font_size * 0.97
 		for dx in range(-edge_size, edge_size + 1):
 			for dy in range(-edge_size, edge_size + 1):
 				text_draw.text((dx + edge_size, dy + edge_size + line_height), line, font=font, fill="white")
