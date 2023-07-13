@@ -47,13 +47,15 @@ def process_sticker_command(uid,cmd):
 		remain=''
 	errors=0
 	errorMsg=''
+	if '=' in character_input:
+		character_input=''
 	
 	character_list=['airi','akito','an','emu','ena','haruka','honami','ichika','kaito','kanade','kohane','len','luka','mafuyu','meiko','miku','minori','mizuki','nene','rin','rui','saki','shiho','shizuku','touya','tsukasa']
 	character_len={'airi':18,'akito':16,'an':16,'emu':16,'ena':19,'haruka':16,'honami':18,'ichika':18,'kaito':16,'kanade':17,'kohane':17,'len':17,'luka':16,'mafuyu':17,'meiko':16,'miku':16,'minori':17,'mizuki':17,'nene':16,'rin':16,'rui':19,'saki':18,'shiho':18,'shizuku':16,'touya':18,'tsukasa':18}
 	character_name = ''.join(c for c in character_input if c.isalpha())
 	character_name = character_name if character_name in character_list else random.choice(character_list)
 	character_number = ''.join(c for c in character_input if c.isdigit())
-	character_number = character_number.zfill(2) if character_number and 1 <= int(character_number) <= character_len[character_name] and character_number%5!=0 else str(random.choice([x for x in range(1, character_len[character_name]) if x % 5 != 0])).zfill(2)
+	character_number = character_number.zfill(2) if character_number and 1 <= int(character_number) <= character_len[character_name] and int(character_number)%5!=0 else str(random.choice([x for x in range(1, character_len[character_name]) if x % 5 != 0])).zfill(2)
 	character = character_name+'/'+character_name + '_' + character_number+'.png'
 	
 	
