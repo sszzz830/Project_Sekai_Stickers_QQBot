@@ -19,11 +19,11 @@
 <img width="591" alt="Screenshot 2023-07-12 at 12 00 03" src="https://github.com/sszzz830/Project_Sekai_Stickers_QQBot/assets/32834442/082a9f16-a015-4c94-99ed-615906c5b163">
 
 ## 更新计划/Update Plan
-1.修复旋转文字后变糊的效果<br>
+1.修复旋转文字后变糊的效果(正在进行)<br>
 2.增加围绕圆弧分布的字体(curv)模式<br>
 3.增加一个混用两种字体的模式,使变得和原网页版的同时不同大小的两种字体效果(实际字号一样，但是两个字体文件字大小不一样)相近<br>
 4.增加支持emoji输入<br>
--1.Fix the blurry effect after rotating text<br>
+-1.Fix the blurry effect after rotating text(work in progress)<br>
 -2.Add a font distribution mode around an arc (curv)<br>
 -3.Add a mode that mixes two fonts, making it close to the effect of two fonts of different sizes on the original web version (the actual font size is the same, but the font files have different font sizes)<br>
 -4.Add support for emoji input<br>
